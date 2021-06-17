@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd46a75abd8ef844951ffb2a065645a, type: 3}
+  m_Name: BasicDialogue
+  m_EditorClassIdentifier: 
+  _messages:
+  - _npcName: Ian
+    _messageText: Welcome to my little dialogue example
+    _npcMood: 
+    _responses: []
+    _nextMessage: 1
+    _triggerEvent: 0
+    _eventNum: 0
+  - _npcName: Ian
+    _messageText: I have written this to build a small dialogue tool for 2D narratives.
+      It can also play events
+    _npcMood: 
+    _responses: []
+    _nextMessage: 2
+    _triggerEvent: 1
+    _eventNum: 0
+  - _npcName: Ian
+    _messageText: You can even have it play other events at the start of messages
+    _npcMood: 
+    _responses: []
+    _nextMessage: 3
+    _triggerEvent: 1
+    _eventNum: 1
+  - _npcName: Ian
+    _messageText: You can have full control over what you want to happen for each
+      message as it runs
+    _npcMood: 
+    _responses: []
+    _nextMessage: 4
+    _triggerEvent: 1
+    _eventNum: 2
+  - _npcName: Ian
+    _messageText: Or give responses that will trigger an event
+    _npcMood: 
+    _responses:
+    - _next: -1
+      _reply: Show me
+      _triggerEvent: 1
+      _eventNum: 3
+    - _next: -1
+      _reply: Not interested
+      _triggerEvent: 0
+      _eventNum: 0
+    _nextMessage: -1
+    _triggerEvent: 0
+    _eventNum: 0
